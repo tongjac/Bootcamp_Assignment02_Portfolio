@@ -13,10 +13,10 @@
 </head>
 
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="./index">Jacky's Site</a>
-      <div class="container">
-      <!-- Hamburger Button on small-width screens -->
+        <a class="navbar-brand" href="./index.html">Jacky's Site</a>
+        <!-- Hamburger Button -->
         <button
         class="navbar-toggler"
         type="button"
@@ -27,40 +27,38 @@
         aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
         </button>
-
-      <!-- Navigation Links, collapsible on small-width screens -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item">
-              <a class="nav-link" href="./index.html" target="_self">
-              Home <span class="sr-only">(current)</span></a
-            >
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./contact.html" target="_self">Contact</a>
-            </li>
-            <li class="nav-item active">
-            <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
-            </li>
-          </ul>
-        </div>
+        <!-- Navigation Links, collapsible on small-width screens -->
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="./index.html" target="_self">
+            Home</a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link" href="./contact.html" target="_self">Contact<span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+          <a class="nav-link active" href="./portfolio.html" target="_self">Portfolio</a>
+          </li>
+        </ul>
       </div>
-    </nav>
-    <!-- End Navigation -->
+    </div>
+  </nav>
+  <!-- End Navigation -->
 
     <!-- Begin Content (Portfolio) -->
     <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-md-8 col-lg-6 rounded bg-info p-5 mt-5 ml-3 mr-3 mb-5">
+            <div class="col-md-8 rounded border border-secondary p-4 mt-5 ml-3 mr-3 mb-5" style="background-color: #ccede3;">
                 <div class="row">
                     <h1>Portfolio</h1>
                 </div>
 
                 <div class="row">
-                    <div class="col-sm-12 pr-0 pl-0 portfolioImages" >
-                        <img class="image-responsive pt-5" src="https://live.staticflickr.com/4084/5147714696_54c06f44e5_k.jpg" alt="Birds Nest Stadium Interior in Beijing">
-                        <img class="image-responsive pt-5" src=AssetsImages/sunflower_jason.jpg alt="placeholder image 350 x 350">
-                        <img class="image-responsive pt-5" src="http://placehold.jp/350x350.png" alt="placeholder image 350 x 350">
+                    <div class="col-sm-12 pr-0 pl-0">
+                        <img class="img-thumbnail p-1" src="http://placekitten.com/250/250" alt="">
+                        <img class="img-thumbnail p-1" src=http://placekitten.com/250/250 alt="">
+                        <img class="img-thumbnail p-1" src="http://placekitten.com/250/250" alt="">
                     </div>
                 </div> 
 
@@ -70,10 +68,9 @@
     <!-- Portfolio Content ends -->
   </body>
   <!-- Footer starts here -->
-  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light">
-    <div class="container">
-        <span class="text-dark">Copyright 2020</span>
-    </div>
+  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light border-top border-primary">
+      <div class="container">
+          <span class="text-dark">Copyright 2020</span>
+      </div>
   </footer>
-
 </html>

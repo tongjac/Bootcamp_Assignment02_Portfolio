@@ -1,80 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
-    <link rel="stylesheet" href="./custom-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <title>Jacky's Contact Information</title>
-    
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
+  <link rel="stylesheet" href="./custom-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <title>Jacky's Contact Information</title>  
 </head>
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-sm navbar-light bg-light">
-        <div class="container">
-            <a class="navbar-brand" href="#">Jacky Tong</a>
-            <button class="navbar-toggler" 
-            type="button" 
-            data-toggle="collapse" 
-            data-target="#navbarResponsive" 
-            aria-controls="navbarResponsive" 
-            aria-expanded="false" 
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+            <a class="navbar-brand" href="./index.html">Jacky's Site</a>
+            <!-- Hamburger Button -->
+            <button
+            class="navbar-toggler"
+            type="button"
+            data-toggle="collapse"
+            data-target="#navbarResponsive"
+            aria-controls="navbarResponsive"
+            aria-expanded="false"
             aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./index.html" target="_self">Home</a>
-                    </li>
-                    <li class="nav-item active">
-                        <a class="nav-link" href="./contact.html" target="_self">Contact<span class="sr-only">(current)</span></a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
-                    </li>
-                </ul>
-            </div>
+            <!-- Navigation Links, collapsible on small-width screens -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="./index.html" target="_self">
+                Home</a>
+              </li>
+              <li class="nav-item active">
+              <a class="nav-link" href="./contact.html" target="_self">Contact<span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+              <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
+              </li>
+            </ul>
+          </div>
         </div>
-    </nav>
-    <!-- Navbar -->
-    <!-- Contact -->
+      </nav>
+      <!-- End Navigation -->
+  
+    <!-- Begin Contact (Contact) -->
     <div class="container">
         <div class="row">
-            <div class="col-md-8 rounded bg-info p-5 mt-5 ml-3 mr-3 mb-5">
+            <div class="col-md-8 rounded border border-secondary p-4"style="background-color: #ccede3;">
                 <div class="row">
-                    <h1>Contact</h1>
+                    <h1 class="text-secondary">Contact</h1>
                 </div>
                 <div class="row">
-                    <div class="col-sm-12 pr-0 pl-0">
+                    <div class="col-sm-12 pr-3 pl-3">
                         <form>
                             <div class="form-group">
                                 <label for="FormControlInput1">Name</label>
-                                <input type="name" class="form-control" id="name" placeholder="name">
+                                <input type="name" class="form-control" id="Name" placeholder="First/Last Name">
                             </div>
                             <div class="form-group">
-                                <label for="FormControlInput2">E-mail address</label>
+                                <label for="FormControlInput2">E-mail Address</label>
                                 <input type="email" class="form-control" id="email" placeholder="name@example.com">
                             </div>
                             <div class="form-group">
                                 <label for="FormControlTextarea1">Messsage</label>
-                                <textarea class="form-control" id="message" rows="4" placeholder="..."></textarea>
+                                <textarea class="form-control" id="message" rows="3" placeholder="Your message here."></textarea>
                             </div>
                         </form>
-                        <button type="button" class="btn btn-danger btn-md mt-1">Submit</button>
+                        <button type="button" class="btn btn-primary btn-md mt-1">Submit</button>
                     </div>
                 </div> 
             </div>
         </div>
     </div>
-    
-    <!-- Footer section starts here-->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
-        </div>
-    </footer>
-</body>
+</body>  
+<!-- Footer starts here -->
+<footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light border-top border-primary">
+    <div class="container">
+        <span class="text-dark">Copyright 2020</span>
+    </div>
+</footer>
 </html>

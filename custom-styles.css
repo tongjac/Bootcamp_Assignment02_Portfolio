@@ -9,13 +9,14 @@ nav {
 
 /* Wanted extra padding inside my elements for text */
 .row {
-  padding: 10px;
-}
-
-.column {
-  padding: 10px;
+  padding: 6px;
 }
 
 img {
   padding: 2%;
+}
+
+.border,
+.border-top {
+  border-width: 3px !important;
 }

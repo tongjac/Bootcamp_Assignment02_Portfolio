@@ -4,56 +4,50 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
-   <link rel="stylesheet" href="./custom-styles.css">
+  <link rel="stylesheet" href="./custom-styles.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <title>Jacky's Bootstrap Portfolio</title>
 </head>
-
   <body>
+    <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
-      <a class="navbar-brand" href="./index">Jacky's Site</a>
-      <div class="container">
-      <!-- Hamburger Button on small-width screens -->
-        <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarResponsive"
-        aria-controls="navbarResponsive"
-        aria-expanded="false"
-        aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-
+      <a class="navbar-brand" href="./index.html">Jacky's Site</a>
+      <!-- Hamburger Button -->
+      <button
+      class="navbar-toggler"
+      type="button"
+      data-toggle="collapse"
+      data-target="#navbarResponsive"
+      aria-controls="navbarResponsive"
+      aria-expanded="false"
+      aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+      </button>
       <!-- Navigation Links, collapsible on small-width screens -->
-        <div class="collapse navbar-collapse" id="navbarResponsive">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html" target="_self">
-              Home <span class="sr-only">(current)</span></a
-            >
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./contact.html" target="_self">Contact</a>
-            </li>
-            <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- End Navigation -->
+  <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link active" href="./index.html" target="_self">
+          Home</a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./contact.html" target="_self">Contact<span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<!-- End Navigation -->
 
     <!-- Begin Content (Index) -->
     <div class="container">
-      <div class=row">
-      </div>
       <div class="row">
-          <div class="col-md-8 rounded border border-secondary" style="background-color: #ccede3;">
+          <div class="col-md-8 rounded border border-secondary p-4" style="background-color: #ccede3;">
               <div class="row">
                   <h1 class="text-secondary">About the Developer</h1>
               </div>
@@ -72,7 +66,7 @@
 <!-- Index Content Ends -->
   </body>
   <!-- Footer starts here -->
-  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light">
+  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light border-top border-primary">
     <div class="container">
         <span class="text-dark">Copyright 2020</span>
     </div>
