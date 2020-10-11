@@ -1,93 +1,81 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
-    <link rel="stylesheet" href="./custom-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <title>Jacky's Bootstrap Portfolio</title>
-  </head>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
+   <link rel="stylesheet" href="./custom-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <title>Jacky's Bootstrap Portfolio</title>
+</head>
 
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
       <a class="navbar-brand" href="./index">Jacky's Site</a>
+      <div class="container">
       <!-- Hamburger Button on small-width screens -->
-      <button
+        <button
         class="navbar-toggler"
         type="button"
         data-toggle="collapse"
-        data-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
         aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
+        aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
-      </button>
+        </button>
+
       <!-- Navigation Links, collapsible on small-width screens -->
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
-            <a class="nav-link" href="./index.html">
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="./index.html" target="_self">
               Home <span class="sr-only">(current)</span></a
             >
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./contact.html">Contact</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="./portfolio.html">Portfolio</a>
-          </li></ul>
-<!--   Dropdown Navigation Code   -->      
-          <!--   <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              id="navbarDropdown"
-              role="button"
-              data-toggle="dropdown"
-              aria-haspopup="true"
-              aria-expanded="false"
-            >
-              Dropdown
-            </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Action</a>
-              <a class="dropdown-item" href="#">Another action</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Something else here</a>
-            </div>
-          </li>   -->  
-
-          <!--   Search Form Code   -->      
-          <!-- <li class="nav-item">
-            <a class="nav-link disabled" href="#">Disabled</a>
-          </li>
-        </ul>
-        <form class="form-inline my-2 my-lg-0">
-          <input
-            class="form-control mr-sm-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-            Search
-          </button>
-        </form> -->
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./contact.html" target="_self">Contact</a>
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
+            </li>
+          </ul>
+        </div>
       </div>
     </nav>
     <!-- End Navigation -->
 
+    <!-- Begin Content (Index) -->
+    <div class="container">
+      <div class=row">
+      </div>
+      <div class="row">
+          <div class="col-md-8 rounded border border-secondary" style="background-color: #ccede3;">
+              <div class="row">
+                  <h1 class="text-secondary">About the Developer</h1>
+              </div>
+              <div class="row">
+                  <div class="col-md-12 rounded p-10">
+                      <img class="image-responsive float-left" src="http://placekitten.com/200/200" alt="Kittens 200x200">
 
+                      <p>Hello classmate, visitor, or perhaps prospective employer. I am Jacky, a full stack developer in training with years of homebrew experience in database maintenance and backend development. Welcome to my portfolio site.</p>
+
+                      <p>This site will be updated periodically with new projects as my portfolio in both web development and illustration continue to grow. Thank you for visiting. Please visit the Contact page for business inquiries and other freelance offers.</p>
+                  </div>
+              </div> 
+          </div>
+      </div>
+  </div>
+<!-- Index Content Ends -->
   </body>
   <!-- Footer starts here -->
-  <div class="footer">
+  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light">
     <div class="container">
-        <span class="text-muted">Place sticky footer content here.</span>
+        <span class="text-dark">Copyright 2020</span>
     </div>
-  </div>
+  </footer>
 
 </html>

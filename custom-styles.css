@@ -1,0 +1,21 @@
+body {
+  background: url("https://i.pinimg.com/originals/22/c0/c7/22c0c79e630c099bdcee75ce78bbfcdd.jpg")
+    repeat left fixed;
+}
+
+nav {
+  margin-bottom: 3.5%;
+}
+
+/* Wanted extra padding inside my elements for text */
+.row {
+  padding: 10px;
+}
+
+.column {
+  padding: 10px;
+}
+
+img {
+  padding: 2%;
+}

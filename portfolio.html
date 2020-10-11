@@ -1,54 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
-    <link rel="stylesheet" href="./custom-styles.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
-    <title>Jacky's Portfolio</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">   
+   <link rel="stylesheet" href="./custom-styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+  <title>Jacky's Bootstrap Portfolio</title>
 </head>
 
-<body>
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="./index">Jacky's Site</a>
-        <!-- Hamburger Button on small-width screens -->
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <a class="navbar-brand" href="./index">Jacky's Site</a>
+      <div class="container">
+      <!-- Hamburger Button on small-width screens -->
         <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarResponsive"
+        aria-controls="navbarResponsive"
+        aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
         </button>
-        <!-- Navigation Links, collapsible on small-width screens -->
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="./index.html">
-                Home <span class="sr-only">(current)</span></a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./contact.html">Contact</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="./portfolio.html">Portfolio</a>
-            </li></ul>
-        </div>
-      </nav>
-      <!-- End Navigation -->
 
-    <!-- Footer section starts here-->
-    <footer class="footer">
-        <div class="container">
-            <span class="text-muted">Place sticky footer content here.</span>
+      <!-- Navigation Links, collapsible on small-width screens -->
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="./index.html" target="_self">
+              Home <span class="sr-only">(current)</span></a
+            >
+            </li>
+            <li class="nav-item">
+            <a class="nav-link" href="./contact.html" target="_self">Contact</a>
+            </li>
+            <li class="nav-item active">
+            <a class="nav-link" href="./portfolio.html" target="_self">Portfolio</a>
+            </li>
+          </ul>
         </div>
-    </footer>
-</body>
+      </div>
+    </nav>
+    <!-- End Navigation -->
+
+    <!-- Begin Content (Portfolio) -->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-8 col-lg-6 rounded bg-info p-5 mt-5 ml-3 mr-3 mb-5">
+                <div class="row">
+                    <h1>Portfolio</h1>
+                </div>
+
+                <div class="row">
+                    <div class="col-sm-12 pr-0 pl-0 portfolioImages" >
+                        <img class="image-responsive pt-5" src="https://live.staticflickr.com/4084/5147714696_54c06f44e5_k.jpg" alt="Birds Nest Stadium Interior in Beijing">
+                        <img class="image-responsive pt-5" src=AssetsImages/sunflower_jason.jpg alt="placeholder image 350 x 350">
+                        <img class="image-responsive pt-5" src="http://placehold.jp/350x350.png" alt="placeholder image 350 x 350">
+                    </div>
+                </div> 
+
+            </div>
+        </div>
+    </div>
+    <!-- Portfolio Content ends -->
+  </body>
+  <!-- Footer starts here -->
+  <footer id="sticky-footer" class="footer fixed-bottom mt-auto py-3 bg-light">
+    <div class="container">
+        <span class="text-dark">Copyright 2020</span>
+    </div>
+  </footer>
+
 </html>
